@@ -1,0 +1,33 @@
+.big-title a {
+    background-color: gold;
+    display: flex;
+    /* Make the element a flex container */
+    justify-content: center;
+    /* Center the element horizontally */
+    text-decoration: none;
+}
+
+
+header {
+    background-color: #333;
+    color: blue;
+}
+
+nav ul {
+    /* No dots next to listed items */
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+/* This keeps the listed items seperated equally */
+nav li {
+    margin: auto;
+}
+
+nav a {
+    font-size: large;
+    color: pink;
+    /* No underline */
+    text-decoration: none;
+}

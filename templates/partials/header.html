@@ -1,0 +1,23 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My Website</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+</head>
+
+<body>
+    <h1 class="big-title"><a href="{% url 'home' %}">The Pizza Post</a></h1>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="{% url 'new-post' %}">New +</a></li>
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="{% url 'info' %}">Info</a></li>
+            </ul>
+        </nav>
+    </header>
+</body>
+
+</html>
