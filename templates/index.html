@@ -1,3 +1,13 @@
 {% extends 'base.html' %}
 {% block content %}
+<div class="main-pizza-post">
+    {% for post in pizza_posts %}
+    <h2>{{ post.name }}</h2>
+    <h3>{{ post.city }}, {{ post.state }}</h3>
+    <p>{{ post.comment }}</p>
+    <h3>Rating: {{ post.rating }}</h3>
+    <p>Will you be returning: {% if post.would_return %}Yes{% else %}No{% endif %}</p>
+    <p>Published: {{post.published_date}}</p>
+    {% endfor %}
+</div>
 {% endblock content %}

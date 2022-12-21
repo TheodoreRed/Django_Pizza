@@ -10,7 +10,7 @@
 
 header {
     background-color: #333;
-    color: blue;
+    color: red;
 }
 
 nav ul {
@@ -30,4 +30,34 @@ nav a {
     color: pink;
     /* No underline */
     text-decoration: none;
+}
+
+.main-pizza-post {
+    margin: auto;
+    background-color: silver;
+    padding-left: 20px;
+    padding-top: 1px;
+    padding-right: 1px;
+    padding-bottom: 1px;
+}
+
+.new-pizza {
+    background-color: silver;
+    padding-left: 20px;
+    padding-top: 1px;
+    padding-right: 1px;
+    padding-bottom: 1px;
+}
+
+.new-pizza-title {
+    color: black;
+    text-align: center;
+}
+
+.info {
+    background-color: silver;
+    padding-left: 20px;
+    padding-top: 1px;
+    padding-right: 1px;
+    padding-bottom: 1px;
 }

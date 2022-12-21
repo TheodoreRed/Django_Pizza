@@ -1,4 +1,6 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
+from .forms import PizzaForm
+from .models import Pizza
 
 # Create your views here.
 def hello(request):
@@ -8,7 +10,9 @@ def hello(request):
 
 
 def index(request):
-    return render(request, "index.html")
+    pizza_posts = Pizza.objects.all().order_by("-published_date")
+
+    return render(request, "index.html", {"pizza_posts": pizza_posts})
 
 
 def new_post(request):
@@ -17,3 +21,13 @@ def new_post(request):
 
 def info(request):
     return render(request, "info.html")
+
+
+def new_post(request):
+    form = PizzaForm(request.POST)
+    if request.method == "POST":
+        form = PizzaForm(request.POST)
+        if form.is_valid():
+            form.save()
+            return redirect("home")
+    return render(request, "new-post.html", {"form": form})

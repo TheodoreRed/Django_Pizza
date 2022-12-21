@@ -1,1 +1,12 @@
 {% extends 'base.html' %}
+{% block content %}
+
+<div class="new-pizza">
+    <h1 class="new-pizza-title">Share Your Thoughts on Pizza</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="btn btn-primary">Save</button>
+    </form>
+</div>
+{% endblock content %}
