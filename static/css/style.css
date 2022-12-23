@@ -32,6 +32,16 @@ nav a {
     text-decoration: none;
 }
 
+.home-page-title {
+    background-color: turquoise;
+    text-align: center;
+    width: fit-content;
+    position: relative;
+    left: 160px;
+    padding: 5px;
+
+}
+
 .main-pizza-post {
     margin: auto;
     background-color: silver;
@@ -39,6 +49,7 @@ nav a {
     padding-top: 1px;
     padding-right: 1px;
     padding-bottom: 1px;
+    text-align: left;
 }
 
 .new-pizza {
@@ -60,4 +71,30 @@ nav a {
     padding-top: 1px;
     padding-right: 1px;
     padding-bottom: 1px;
+    text-align: center;
+    align-items: center;
+}
+
+.info p {
+    text-align: center;
+    width: 50%;
+    position: relative;
+    left: 317px;
+}
+
+.footer {
+    background-color: #333;
+    color: pink;
+    padding-left: 10px;
+    text-align: center;
+}
+
+.blank {
+    background-color: gold;
+    text-align: right;
+    padding-right: 5px;
+}
+
+.blank a {
+    text-decoration: none;
 }

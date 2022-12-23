@@ -1,6 +1,7 @@
 from django.shortcuts import render, redirect
 from .forms import PizzaForm
 from .models import Pizza
+from datetime import datetime
 
 # Create your views here.
 def hello(request):
@@ -11,7 +12,6 @@ def hello(request):
 
 def index(request):
     pizza_posts = Pizza.objects.all().order_by("-published_date")
-
     return render(request, "index.html", {"pizza_posts": pizza_posts})
 
 
