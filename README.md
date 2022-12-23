@@ -38,5 +38,11 @@ To run this website locally, follow these steps:
 - Make it so users have to log in first, can view their profile to see their posts, etc.
 - Add pagination to view more pizza posts as scroll
 
+## Homepage
 ![home](README_images/homepage.png)
-![info](info.png)
+## Information page
+![info](README_images/info.png)
+## Form to post about pizza
+![form](README_images/form.png)
+## Data stored
+![admin](README_images/django-admin.png)
