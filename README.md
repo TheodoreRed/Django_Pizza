@@ -37,3 +37,6 @@ To run this website locally, follow these steps:
 - Add bootstrap styling for the HTML & CSS and add 
 - Make it so users have to log in first, can view their profile to see their posts, etc.
 - Add pagination to view more pizza posts as scroll
+
+![home](homepage.png)
+![info](info.png)
