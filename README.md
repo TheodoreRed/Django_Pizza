@@ -22,14 +22,15 @@ To run this website locally, follow these steps:
    `git clone https://github.com/TheodoreRed/Django_Pizza.git`
 2. Navigate to the project directory:
    `cd Django`
-3. Create a virtual environment and activate it:
+3. Create a virtual environment:
    `python3 -m venv .env`
+4.  Activate it:
    `.env/Scripts/Activate.ps1`
-4. Install the required packages:
+5. Install the required packages:
    `pip install -r requirements.txt`
-5. Run the Django migrations:
+6. Run the Django migrations:
    `python manage.py migrate`
-6. Start the development server:
+7. Start the development server:
    `python manage.py runserver`
 
 ## Many ideas for future work
